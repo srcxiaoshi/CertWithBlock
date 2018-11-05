@@ -1,0 +1,6 @@
+framework module SRCFoundation {
+  umbrella header "SRCFoundation.h"
+
+  export *
+  module * { export * }
+}

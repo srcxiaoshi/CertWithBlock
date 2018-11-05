@@ -1,0 +1,6 @@
+framework module SRCUIKit {
+  umbrella header "SRCUIKit.h"
+
+  export *
+  module * { export * }
+}
