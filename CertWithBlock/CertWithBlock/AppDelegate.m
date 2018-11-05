@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <SRCUIKit/SRCUIKit.h>
+#import "RootViewController.h"
+
+
 
 @interface AppDelegate ()
 
@@ -17,6 +21,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [SRCDeviceInfo GloBalDeviceType];
+    });
+    self.window.backgroundColor=[UIColor whiteColor];
+    RootViewController *rootVC=[[RootViewController alloc] init];
+    self.window.rootViewController=rootVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

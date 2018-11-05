@@ -17,6 +17,9 @@
 		3CEA717A2190335000889905 /* CertWithBlockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA71792190335000889905 /* CertWithBlockUITests.m */; };
 		3CEA718B219033CB00889905 /* SRCUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEA7189219033CB00889905 /* SRCUIKit.framework */; };
 		3CEA718C219033CC00889905 /* SRCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEA718A219033CB00889905 /* SRCFoundation.framework */; };
+		3CEA71942190396A00889905 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA71932190396A00889905 /* RootViewController.m */; };
+		3CEA719921903A6F00889905 /* ScanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA719821903A6F00889905 /* ScanCodeViewController.m */; };
+		3CEA719C21903A8000889905 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA719B21903A8000889905 /* MineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		3CEA717B2190335100889905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CEA7189219033CB00889905 /* SRCUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SRCUIKit.framework; sourceTree = "<group>"; };
 		3CEA718A219033CB00889905 /* SRCFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SRCFoundation.framework; sourceTree = "<group>"; };
+		3CEA71922190396A00889905 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		3CEA71932190396A00889905 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		3CEA719721903A6F00889905 /* ScanCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanCodeViewController.h; sourceTree = "<group>"; };
+		3CEA719821903A6F00889905 /* ScanCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanCodeViewController.m; sourceTree = "<group>"; };
+		3CEA719A21903A8000889905 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		3CEA719B21903A8000889905 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,8 @@
 		3CEA71542190334F00889905 /* CertWithBlock */ = {
 			isa = PBXGroup;
 			children = (
+				3CEA718F2190391100889905 /* Model */,
+				3CEA71902190391100889905 /* UI */,
 				3CEA7188219033CB00889905 /* ShareLib */,
 				3CEA71552190334F00889905 /* AppDelegate.h */,
 				3CEA71562190334F00889905 /* AppDelegate.m */,
@@ -146,6 +157,50 @@
 				3CEA718A219033CB00889905 /* SRCFoundation.framework */,
 			);
 			path = ShareLib;
+			sourceTree = "<group>";
+		};
+		3CEA718F2190391100889905 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CEA71902190391100889905 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3CEA719521903A5800889905 /* MineViewController */,
+				3CEA719621903A5800889905 /* ScanCodeViewController */,
+				3CEA71912190393000889905 /* RootViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3CEA71912190393000889905 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CEA71922190396A00889905 /* RootViewController.h */,
+				3CEA71932190396A00889905 /* RootViewController.m */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		3CEA719521903A5800889905 /* MineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CEA719A21903A8000889905 /* MineViewController.h */,
+				3CEA719B21903A8000889905 /* MineViewController.m */,
+			);
+			path = MineViewController;
+			sourceTree = "<group>";
+		};
+		3CEA719621903A5800889905 /* ScanCodeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CEA719721903A6F00889905 /* ScanCodeViewController.h */,
+				3CEA719821903A6F00889905 /* ScanCodeViewController.m */,
+			);
+			path = ScanCodeViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +335,9 @@
 			files = (
 				3CEA715A2190334F00889905 /* ViewController.m in Sources */,
 				3CEA71652190335000889905 /* main.m in Sources */,
+				3CEA719921903A6F00889905 /* ScanCodeViewController.m in Sources */,
+				3CEA719C21903A8000889905 /* MineViewController.m in Sources */,
+				3CEA71942190396A00889905 /* RootViewController.m in Sources */,
 				3CEA71572190334F00889905 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +519,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Src.CertWithBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,6 +542,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Src.CertWithBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
