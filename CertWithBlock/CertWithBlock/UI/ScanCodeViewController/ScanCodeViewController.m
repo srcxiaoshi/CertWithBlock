@@ -7,6 +7,9 @@
 //
 
 #import "ScanCodeViewController.h"
+#import <SRCUIKit/SRCUIKit.h>
+#import "CameraViewController.h"
+
 
 @interface ScanCodeViewController ()
 
@@ -16,17 +19,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    //扫一扫
+    //添加一个按钮
+    UILabel *btn=[[UILabel alloc] initWithFrame:CGRectMake((VIEW_WIDTH-100)/2, (VIEW_HEIGHT-NavHeight-100-self.tabBarController.tabBar.frame.size.height)/2, 100, 100)];
+    UITapGestureRecognizer *gest=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pressBtn)];
+    btn.userInteractionEnabled=YES;
+    btn.text=@"扫一扫";
+    btn.textAlignment=NSTextAlignmentCenter;
+    [btn addGestureRecognizer:gest];
+    [self.view addSubview:btn];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)pressBtn
+{
+    CameraViewController *vc=[CameraViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
-*/
+
 
 @end

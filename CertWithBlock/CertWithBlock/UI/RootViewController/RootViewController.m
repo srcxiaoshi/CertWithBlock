@@ -7,8 +7,10 @@
 //
 
 #import "RootViewController.h"
-#import <SRCUIKit/SRCUIKit.h>
+
 #import <SRCFoundation/SRCFoundation.h>
+
+#import <SRCUIKit/SRCUIKit.h>
 
 #import "ScanCodeViewController.h"
 #import "MineViewController.h"

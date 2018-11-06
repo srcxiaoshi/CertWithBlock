@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CDB055021911F5D008A89C6 /* NavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDB054F21911F5D008A89C6 /* NavBarView.m */; };
+		3CDB055321912B2D008A89C6 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CDB055221912B2D008A89C6 /* CameraViewController.m */; };
+		3CDB056C2191411B008A89C6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDB056B2191411B008A89C6 /* AVFoundation.framework */; };
+		3CDB058721917C34008A89C6 /* SRCUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDB058521917C34008A89C6 /* SRCUIKit.framework */; };
+		3CDB058821917C34008A89C6 /* SRCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CDB058621917C34008A89C6 /* SRCFoundation.framework */; };
 		3CEA71572190334F00889905 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA71562190334F00889905 /* AppDelegate.m */; };
 		3CEA715A2190334F00889905 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA71592190334F00889905 /* ViewController.m */; };
 		3CEA715D2190334F00889905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEA715B2190334F00889905 /* Main.storyboard */; };
@@ -15,11 +20,10 @@
 		3CEA71652190335000889905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA71642190335000889905 /* main.m */; };
 		3CEA716F2190335000889905 /* CertWithBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA716E2190335000889905 /* CertWithBlockTests.m */; };
 		3CEA717A2190335000889905 /* CertWithBlockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA71792190335000889905 /* CertWithBlockUITests.m */; };
-		3CEA718B219033CB00889905 /* SRCUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEA7189219033CB00889905 /* SRCUIKit.framework */; };
-		3CEA718C219033CC00889905 /* SRCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEA718A219033CB00889905 /* SRCFoundation.framework */; };
 		3CEA71942190396A00889905 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA71932190396A00889905 /* RootViewController.m */; };
 		3CEA719921903A6F00889905 /* ScanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA719821903A6F00889905 /* ScanCodeViewController.m */; };
 		3CEA719C21903A8000889905 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA719B21903A8000889905 /* MineViewController.m */; };
+		3CEA71A02190412100889905 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEA719F2190412100889905 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CDB054E21911F5D008A89C6 /* NavBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavBarView.h; sourceTree = "<group>"; };
+		3CDB054F21911F5D008A89C6 /* NavBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavBarView.m; sourceTree = "<group>"; };
+		3CDB055121912B2D008A89C6 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		3CDB055221912B2D008A89C6 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		3CDB056B2191411B008A89C6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3CDB058521917C34008A89C6 /* SRCUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SRCUIKit.framework; sourceTree = "<group>"; };
+		3CDB058621917C34008A89C6 /* SRCFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SRCFoundation.framework; sourceTree = "<group>"; };
 		3CEA71522190334F00889905 /* CertWithBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CertWithBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEA71552190334F00889905 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CEA71562190334F00889905 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,14 +67,14 @@
 		3CEA71752190335000889905 /* CertWithBlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CertWithBlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEA71792190335000889905 /* CertWithBlockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CertWithBlockUITests.m; sourceTree = "<group>"; };
 		3CEA717B2190335100889905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CEA7189219033CB00889905 /* SRCUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SRCUIKit.framework; sourceTree = "<group>"; };
-		3CEA718A219033CB00889905 /* SRCFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SRCFoundation.framework; sourceTree = "<group>"; };
 		3CEA71922190396A00889905 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		3CEA71932190396A00889905 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		3CEA719721903A6F00889905 /* ScanCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanCodeViewController.h; sourceTree = "<group>"; };
 		3CEA719821903A6F00889905 /* ScanCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanCodeViewController.m; sourceTree = "<group>"; };
 		3CEA719A21903A8000889905 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		3CEA719B21903A8000889905 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		3CEA719E2190412100889905 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3CEA719F2190412100889905 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CEA718C219033CC00889905 /* SRCFoundation.framework in Frameworks */,
-				3CEA718B219033CB00889905 /* SRCUIKit.framework in Frameworks */,
+				3CDB058721917C34008A89C6 /* SRCUIKit.framework in Frameworks */,
+				3CDB058821917C34008A89C6 /* SRCFoundation.framework in Frameworks */,
+				3CDB056C2191411B008A89C6 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +105,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CDB056A2191411A008A89C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CDB056B2191411B008A89C6 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CDB058421917C34008A89C6 /* ShareLib */ = {
+			isa = PBXGroup;
+			children = (
+				3CDB058521917C34008A89C6 /* SRCUIKit.framework */,
+				3CDB058621917C34008A89C6 /* SRCFoundation.framework */,
+			);
+			path = ShareLib;
+			sourceTree = "<group>";
+		};
 		3CEA71492190334F00889905 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +129,7 @@
 				3CEA716D2190335000889905 /* CertWithBlockTests */,
 				3CEA71782190335000889905 /* CertWithBlockUITests */,
 				3CEA71532190334F00889905 /* Products */,
+				3CDB056A2191411A008A89C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,9 +146,9 @@
 		3CEA71542190334F00889905 /* CertWithBlock */ = {
 			isa = PBXGroup;
 			children = (
+				3CDB058421917C34008A89C6 /* ShareLib */,
 				3CEA718F2190391100889905 /* Model */,
 				3CEA71902190391100889905 /* UI */,
-				3CEA7188219033CB00889905 /* ShareLib */,
 				3CEA71552190334F00889905 /* AppDelegate.h */,
 				3CEA71562190334F00889905 /* AppDelegate.m */,
 				3CEA71582190334F00889905 /* ViewController.h */,
@@ -150,15 +180,6 @@
 			path = CertWithBlockUITests;
 			sourceTree = "<group>";
 		};
-		3CEA7188219033CB00889905 /* ShareLib */ = {
-			isa = PBXGroup;
-			children = (
-				3CEA7189219033CB00889905 /* SRCUIKit.framework */,
-				3CEA718A219033CB00889905 /* SRCFoundation.framework */,
-			);
-			path = ShareLib;
-			sourceTree = "<group>";
-		};
 		3CEA718F2190391100889905 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +190,7 @@
 		3CEA71902190391100889905 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				3CEA719D2190411800889905 /* BaseViewController */,
 				3CEA719521903A5800889905 /* MineViewController */,
 				3CEA719621903A5800889905 /* ScanCodeViewController */,
 				3CEA71912190393000889905 /* RootViewController */,
@@ -199,8 +221,21 @@
 			children = (
 				3CEA719721903A6F00889905 /* ScanCodeViewController.h */,
 				3CEA719821903A6F00889905 /* ScanCodeViewController.m */,
+				3CDB055121912B2D008A89C6 /* CameraViewController.h */,
+				3CDB055221912B2D008A89C6 /* CameraViewController.m */,
 			);
 			path = ScanCodeViewController;
+			sourceTree = "<group>";
+		};
+		3CEA719D2190411800889905 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CEA719E2190412100889905 /* BaseViewController.h */,
+				3CEA719F2190412100889905 /* BaseViewController.m */,
+				3CDB054E21911F5D008A89C6 /* NavBarView.h */,
+				3CDB054F21911F5D008A89C6 /* NavBarView.m */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +372,10 @@
 				3CEA71652190335000889905 /* main.m in Sources */,
 				3CEA719921903A6F00889905 /* ScanCodeViewController.m in Sources */,
 				3CEA719C21903A8000889905 /* MineViewController.m in Sources */,
+				3CDB055021911F5D008A89C6 /* NavBarView.m in Sources */,
 				3CEA71942190396A00889905 /* RootViewController.m in Sources */,
+				3CDB055321912B2D008A89C6 /* CameraViewController.m in Sources */,
+				3CEA71A02190412100889905 /* BaseViewController.m in Sources */,
 				3CEA71572190334F00889905 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +485,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -510,22 +548,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SPF22QQWVJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/CertWithBlock/ShareLib/**",
 					"$(PROJECT_DIR)/CertWithBlock/ShareLib",
 				);
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/CertWithBlock/ShareLib";
 				INFOPLIST_FILE = CertWithBlock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = (
-					"-Objc",
-					"-all_load",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/CertWithBlock/ShareLib";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Src.CertWithBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/CertWithBlock/ShareLib";
 			};
 			name = Debug;
 		};
@@ -534,22 +576,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SPF22QQWVJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/CertWithBlock/ShareLib/**",
 					"$(PROJECT_DIR)/CertWithBlock/ShareLib",
 				);
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/CertWithBlock/ShareLib";
 				INFOPLIST_FILE = CertWithBlock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = (
-					"-Objc",
-					"-all_load",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/CertWithBlock/ShareLib";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Src.CertWithBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/CertWithBlock/ShareLib";
 			};
 			name = Release;
 		};
