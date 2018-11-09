@@ -9,6 +9,7 @@
 #import "CameraViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <SRCUIKit/SRCUIKit.h>
+#import "InfoViewController.h"
 
 
 @interface CameraViewController ()<AVCaptureMetadataOutputObjectsDelegate>
@@ -26,9 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self makeRight];
     //部署UI
-    [self loadQCView];
+    //[self loadQCView];
 
 }
 
@@ -79,21 +79,22 @@
 
 }
 
-
 #pragma mark delegate
 - (void)captureOutput:(AVCaptureOutput *)output didOutputMetadataObjects:(NSArray<__kindof AVMetadataObject *> *)metadataObjects fromConnection:(AVCaptureConnection *)connection {
     if(metadataObjects.count > 0) {
         if(session)
         {
             [session stopRunning];
-            NSLog(@"获取到了二维码");
+
             AVMetadataMachineReadableCodeObject * readCode = metadataObjects.firstObject;
-            NSLog(@"%@", readCode.stringValue);
+            InfoViewController *vc=[InfoViewController new];
+            vc.url=readCode.stringValue;
+            NSLog(@"%@",readCode.stringValue);
+            [self.navigationController pushViewController:vc animated:YES];
+            session=nil;
         }
     }
 }
-
-
 
 //申请权限
 -(void)makeRight
@@ -126,6 +127,12 @@
             NSLog(@"相机权限获取失败");
             break;
     }
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self makeRight];
 }
 
 
